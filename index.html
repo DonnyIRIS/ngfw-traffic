@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — PAN NGFW Traffic Monitor</title>
+<style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:720px;margin:0 auto;padding:24px;color:#1b2430;background:#fff}h1{font-size:26px}h2{font-size:18px;margin-top:28px}code{background:#eef2f6;padding:1px 5px;border-radius:4px}@media(prefers-color-scheme:dark){body{background:#0b0f14;color:#e8eef5}a{color:#4da3ff}code{background:#18212d}}</style></head>
+<body>
+<h1>PAN NGFW Traffic Monitor — Support</h1>
+<p>Live inbound/outbound interface throughput for PAN-OS next-generation firewalls, on your iPhone.</p>
+<h2>Requirements</h2>
+<ul>
+<li>A firewall running PAN-OS with HTTPS management enabled on the interface you connect to.</li>
+<li>An admin account with XML API access. A read-only (superuser read-only or a custom role with Operational Requests) is enough.</li>
+<li>Network access from your iPhone to the management IP: same LAN, or over a VPN such as GlobalProtect.</li>
+</ul>
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>Timed out</strong> — your iPhone cannot reach the management IP. Check Wi-Fi/VPN and any permitted-IP list on the management profile.</li>
+<li><strong>Connection refused</strong> — HTTPS is not enabled in the interface management profile, or the port is wrong.</li>
+<li><strong>Certificate changed</strong> — the firewall certificate was replaced. Open the firewall in the app and tap <em>Re-check certificate</em>.</li>
+<li><strong>Invalid credentials</strong> — the account lacks XML API permission or the API key was revoked. Use <em>Update credentials</em>.</li>
+<li><strong>iOS asks to find devices on your local network</strong> — allow it; the app needs this to reach firewalls on your LAN.</li>
+</ul>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:coulsond@me.com">coulsond@me.com</a></p>
+<p><a href="privacy.html">Privacy policy</a></p>
+<p style="font-size:13px;opacity:.7">PAN-OS is a trademark of Palo Alto Networks, Inc. This app is not affiliated with or endorsed by Palo Alto Networks.</p>
+</body></html>
